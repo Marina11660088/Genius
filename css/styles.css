@@ -1,0 +1,44 @@
+:root {
+  --color-brand: #2b7fff;
+  --color-primary-dark: #011c44;
+  --color-primary-light: #fff;
+}
+/* Base */
+body {
+  color: var(--color-primary-dark);
+}
+ul {
+  list-style-type: none;
+}
+/* Button */
+.button-primery {
+  background: var(--color-brand);
+  border-radius: 32px;
+  border: 2px solid var(--color-brand);
+  color: var(--color-primary-light);
+  cursor: pointer;
+}
+.button-primery:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+/* Link */
+.link {
+  color: var(--color-primary-dark);
+}
+.link:hover {
+  color: var(--color-brand);
+}
+/* hero section */
+.hero-title {
+  color: var(--color-brand);
+}
+/* advantages section */
+.advantages {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+/* title */
+.section-title .accent {
+  color: var(--color-brand);
+}
