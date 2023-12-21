@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty zone</title>
+
+    <!-- styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -32,11 +34,11 @@
         <h2 class="section-title">
           Перевтілюйтесь в <span class="accent">beauty zone!</span>
         </h2>
-        <p>
+        <p class="about-bz">
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
         </p>
-        <p>
+        <p class="about-bz-service">
           B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості та
           приємний сервіс. Наші косметологічні процедури та препарати допоможуть
           вам підтримувати свою красу та молодість. З нами краса назавжди!
@@ -51,33 +53,27 @@
         <h2 class="section-title">
           Чому люди <span class="accent">обирають нас</span>
         </h2>
-        <ul>
-          <li>
-            <article class="advantages">
-              <img src="./images/minilogo1.svg" alt="вектор" />
-              <p>
-                Всі наші косметологи мають вищу медичну освіту та стаж роботи
-                від 5 років
-              </p>
-            </article>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <img src="./images/minilogo1.svg" alt="вектор" />
+            <p>
+              Всі наші косметологи мають вищу медичну освіту та стаж роботи від
+              5 років
+            </p>
           </li>
-          <li>
-            <article class="advantages">
-              <img src="./images/minilogo2.svg" alt="косметика" />
-              <p>
-                Використовуємо тільки професійне обладнання та косметику,
-                перевірену часом
-              </p>
-            </article>
+          <li class="advantages-item">
+            <img src="./images/minilogo2.svg" alt="косметика" />
+            <p>
+              Використовуємо тільки професійне обладнання та косметику,
+              перевірену часом
+            </p>
           </li>
-          <li>
-            <article class="advantages">
-              <img src="./images/minilogo3.svg" alt="корона" />
-              <p>
-                Наша мета - підкреслити переваги та приховати недоліки, а не
-                переробити
-              </p>
-            </article>
+          <li class="advantages-item">
+            <img src="./images/minilogo3.svg" alt="корона" />
+            <p>
+              Наша мета - підкреслити переваги та приховати недоліки, а не
+              переробити
+            </p>
           </li>
         </ul>
       </section>
@@ -137,22 +133,29 @@
           <img src="./images/logo.svg" alt="logo Beauty zone" />
         </a>
         <ul>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Чому ми</a></li>
-          <li><a href="#">Наші процедури</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="footer-link" href="#about-bz">Про нас</a></li>
+          <li><a class="footer-link" href="#why-bz">Чому ми</a></li>
+          <li><a class="footer-link" href="#procedures">Наші процедури</a></li>
+          <li><a class="footer-link" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
       <address>
         <ul>
           <li>
-            <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+            <a class="adress-item" href="tel:+380960000007"
+              >+ 38 (096) 000 00 07</a
+            >
           </li>
           <li>
-            <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+            <a class="adress-item" href="mailto:beautyzone@gmail.com"
+              >beautyzone@gmail.com</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/f5roskzKXoE4J4bq9" target="_blank"
+            <a
+              class="adress-item"
+              href="https://maps.app.goo.gl/f5roskzKXoE4J4bq9"
+              target="_blank"
               >Україна, м. Київ, вул. Тараса Шевченка 5</a
             >
           </li>
@@ -172,9 +175,11 @@
             </a>
           </li>
         </ul>
-        <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>&copy; 2022 Дані захищені</p>
       </address>
+      <a class="privacy-policy" href="#" target="_blank"
+        >Політика конфіденційності</a
+      >
+      <p class="protection">&copy; 2022 Дані захищені</p>
     </footer>
   </body>
 </html>
