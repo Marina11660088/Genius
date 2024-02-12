@@ -1,0 +1,14 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    &__button {
+        background-color: var(--color-primary-grey);
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        padding: 0;
+    }
+}

@@ -1,0 +1,14 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+    fill: var(--color-star-first);
+  }
+  50% {
+    transform: rotate(360deg);
+    fill: var(--color-primary-dark);
+  }
+  100% {
+    transform: rotate(720deg);
+    fill: var(--color-primary-grey);
+  }
+}

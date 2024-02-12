@@ -1,0 +1,107 @@
+// .container-about {
+//   padding-bottom: 48px;
+//   padding-left: 50px;
+// }
+
+.section-about-bz {
+  display: block;
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 1440px;
+    height: 700px;
+    display: flex;
+  }
+
+  &__title {
+    max-width: 200px;
+    align-items: center;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+      max-width: 529px;
+      align-items: center;
+    }
+  }
+
+  &__part-first {
+    padding-top: 40px;
+    max-width: 650px;
+  }
+
+  &__part-second {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      position: relative;
+      flex-basis: 50%;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    line-height: normal;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      line-height: 1.73;
+    }
+  }
+  &__text-service {
+    font-size: 18px;
+    line-height: normal;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.73;
+    }
+  }
+  &__text-weight {
+    font-weight: 600;
+  }
+  &__img-face-first {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      margin-bottom: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+  }
+
+  &__img-face-second {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      margin-left: auto;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+  }
+
+  &__img-star-first {
+    position: absolute;
+    fill: var(--color-star-first);
+    top: 355px;
+    left: 140px;
+    flex-shrink: 0;
+    animation-name: spin;
+    animation-duration: 3s;
+  }
+  &__img-star-second {
+    position: absolute;
+    fill: var(--color-brand);
+    top: 30px;
+    right: 0;
+    animation-name: spin;
+    animation-duration: 3s;
+  }
+
+  &__img-star-third {
+    position: absolute;
+    fill: var(--color-primary-grey);
+    top: 260px;
+    right: 40px;
+    flex-shrink: 0;
+    animation-name: spin;
+    animation-duration: 3s;
+  }
+}
