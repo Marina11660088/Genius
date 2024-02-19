@@ -9,7 +9,16 @@
   background-color: var(--color-primary-light);
   transform: translateX(100%);
   transition: tranform 0.3s;
-  z-index: 3;
+  z-index: 2;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    height: 240px;
+    content: '';
+  }
+
 
   &.is-open {
     transform: translateX(0);
@@ -19,16 +28,14 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    // fill: var(--color-primary-dark);
-    // stroke: var(--color-primary-light);
-    // background-color: var(--color-primary-light);
+    position: absolute;
+    fill:none;
+    width: 36px;
+    height: 36px;
     stroke: var(--color-primary-dark);
     background-color: transparent;
-
     border: none;
     cursor: pointer;
-
-    position: absolute;
     top: 10px;
     right: 14px;
     @media screen and (min-width: $bp-mobile) {

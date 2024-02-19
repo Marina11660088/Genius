@@ -1,13 +1,17 @@
 .procedures-card {
+
+  &__general {
   height: 456px;
   padding: 372px 77px 32px 115px;
   border: 1px solid lightgray;
   border-radius: 4px 120px;
   transition: transform 0.2s;
 
+
   &:hover {
     transform: scale(1.05);
   }
+}
   &__img-first {
     background-image: linear-gradient(
         180deg,

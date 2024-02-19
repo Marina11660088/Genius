@@ -82,6 +82,7 @@
   &__icons {
     display: flex;
     gap: 24px;
+    
   }
 
   &__menu-link {
@@ -90,6 +91,10 @@
 
   &__adress-icon {
     fill: var(--color-primary-light);
+    &:hover {
+      fill: var(--color-brand);
+    }
+    
   }
 
   &__adress-item {
@@ -107,6 +112,7 @@
 
   &__address-social {
     margin-top: 16px;
+    
   }
 
   &__privacy-policy {

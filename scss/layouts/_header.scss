@@ -3,11 +3,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 32px 0;
+  padding: 16px 0 24px 0;
+  z-index: 1;
+
+  @media screen and (min-width: $bp-mobile) {
+    padding: 32px 0;
+}
 
   @media screen and (min-width: $bp-tablet) {
     backdrop-filter: blur(5px);
-    display: block;
+    // display: block;
     background: rgba(255, 255, 255, 0.25);
   }
 
@@ -28,13 +33,18 @@
 
   &__menu {
     display: none;
-
     @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 24px;
+  }
+
+    @media screen and (min-width: $bp-desktop) {
       display: flex;
       gap: 56px;
       flex-grow: 1;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
     }
   }
 
@@ -42,6 +52,11 @@
     display: none;
 
     @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 16px;
+  }
+
+    @media screen and (min-width: $bp-desktop) {
       display: flex;
       gap: 32px;
       flex-grow: 1;
@@ -70,14 +85,15 @@
     color: var(--color-brand);
   }
   &__burger {
-    display: block;
+    // display: block;
     background-color: transparent;
     border: none;
     padding: 0;
     fill: var(--color-primary-light);
     width: 24px;
     height: 24px;
-    @media screen and (min-width: $bp-desktop) {
+    cursor: pointer ;
+    @media screen and (min-width: $bp-tablet) {
       display: none;
     }
   }

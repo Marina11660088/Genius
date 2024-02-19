@@ -24,7 +24,7 @@
     }
   }
   &__advantages-item {
-    height: 181px;
+    min-height: 181px;
     width: 316px;
     padding: 24px 32px;
     text-align: center;
@@ -40,5 +40,6 @@
   }
   &__text {
     line-height: 1.33;
+    margin: 0;
   }
 }
