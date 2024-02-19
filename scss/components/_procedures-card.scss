@@ -6,12 +6,10 @@
   border: 1px solid lightgray;
   border-radius: 4px 120px;
   transition: transform 0.2s;
-
-
-  &:hover {
+   &:hover {
     transform: scale(1.05);
+   }
   }
-}
   &__img-first {
     background-image: linear-gradient(
         180deg,
