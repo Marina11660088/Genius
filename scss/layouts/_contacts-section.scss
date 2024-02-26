@@ -38,13 +38,15 @@
   }
 
   &__container-form {
-    height: 480px;
+    max-height: 480px;
     max-width: 424px;
+    // height: 100%;
     width: 100%;
     border-radius: 32px;
     background-color: var(--color-primary-dark);
     position: relative;
     padding: 48px 56px;
     color: var(--color-primary-light);
+    overflow-y: auto;
   }
 }
